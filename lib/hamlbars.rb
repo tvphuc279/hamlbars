@@ -16,7 +16,8 @@ module Hamlbars
   Haml::Compiler.send(:include, Ext::Compiler)
 
   if defined? Sprockets
-    Sprockets.register_engine '.hamlbars', Template
+    # Sprockets.register_engine '.hamlbars', Template
+    Sprockets.register_transformer 'text/html', 'application/javascript', Template
   end
 
 end
