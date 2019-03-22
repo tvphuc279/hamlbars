@@ -51,7 +51,7 @@ module Hamlbars
 
             handlebars_rendered_attributes
           end
-          alias build_attributes_without_handlebars_attributes build_attributes
+          # alias build_attributes_without_handlebars_attributes build_attributes
           alias build_attributes build_attributes_with_handlebars_attributes
         end
       end
